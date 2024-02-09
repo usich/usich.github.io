@@ -90,29 +90,7 @@ header {
     document.getElementById('customerName').innerText = first_name;
     tg.expand();
     // Код для загрузки данных из CSV файла и обновления страницы
-    window.onload = function() {
-    // Предположим, что у нас есть CSV файл с данными, например:
-    // Имя клиента,Штрих-код
-    // John Doe,1234567890123
-
-    // Парсим CSV файл
-    const csvData = `John Doe,1234567890123`; // замените на реальные данные или загрузите файл
-
-    // Разделяем строки
-    const lines = csvData.split('\n');
-
-    // Получаем данные из первой строки (предполагаем, что это заголовки столбцов)
-    const headers = lines[0].split(',');
-
-    // Получаем данные из второй строки (предполагаем, что это данные пользователя)
-    const userData = lines[1].split(',');
-
-    // Обновляем имя клиента
-   // document.getElementById('customerName').textContent = userData[0];
-
-    // Обновляем изображение штрих-кода
-   // document.getElementById('barcodeImg').src = `https://i.pinimg.com/originals/0a/e2/18/0ae2187166e1c92b6c12b24707d7e7e7.jpg`;
-}
+    
 </script>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </body>
