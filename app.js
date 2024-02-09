@@ -1,1 +1,1 @@
-document.getElementById("customerName").innetHTML = "dddd";
+document.getElementById("customerName").innerHTML = "dddd";
