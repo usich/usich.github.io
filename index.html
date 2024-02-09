@@ -87,7 +87,7 @@ header {
 <script>
     let tg = indow.Telegram.WebApp;
     let first_name = tg.initDataUnsafe.user.first_name;
-    document.getElementById('customerName').innerText = first_name;
+    document.getElementById('customerName').textContent = first_name;
     tg.expand();
     // Код для загрузки данных из CSV файла и обновления страницы
     
