@@ -1,4 +1,4 @@
 let tg = window.Telegram.WebApp;
 
 tg.expand();
-document.getElementById("customerName").innerHTML = tg.initdataUnsefe.user.first_name;
+document.getElementById("customerName").innerHTML = tg.initDataUnsafe.user.first_name;
