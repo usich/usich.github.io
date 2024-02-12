@@ -5,10 +5,9 @@ document.getElementById("customerName").innerHTML = tg.initDataUnsafe.user.first
 
 let send = document.getElementById("send");
 
-send.addEVentListener("click", () {
-	tg.sendData('asdasdasdasdasdasdsda');
-	tg.close();
-});
-
+// send.addEVentListener("click", () {
+// 	tg.sendData('asdasdasdasdasdasdsda');
+// 	tg.close();
+// });
 
 
