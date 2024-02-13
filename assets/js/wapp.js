@@ -10,7 +10,7 @@ tg = window.Telegram.WebApp;
 // params = tg.initDataUnsafe.start_param;
 
 tg.showAlert("JSON.stringify(params)");
-params = tg.initDataUnsafe.user;
+params = tg.initDataUnsafe;
 
 tg.showAlert(typeof params);
 
