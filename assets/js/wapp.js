@@ -9,8 +9,7 @@ JsBarcode('#barcode', '9781022540897', {
 
 tg = window.Telegram.WebApp;
 	
-const params = new URLSearchParams(document.location.search);
-const availableTranslations = JSON.parse(params.get('available'));
+queryString = window.location.search;
 // const callbackUrl = params.get('callback_url')
 
 
@@ -20,7 +19,7 @@ const availableTranslations = JSON.parse(params.get('available'));
 
 
 // tg.showAlert("2323423");
-document.getElementById("profile-name").innerHTML = availableTranslations;
+document.getElementById("profile-name").innerHTML = queryString;
 
 // Use this method to set the result of an interaction with a Web App and send a corresponding message on behalf of the user to the chat from which the query originated. On success, a SentWebAppMessage object is returned.
 
