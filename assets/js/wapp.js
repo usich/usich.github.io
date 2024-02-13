@@ -1,4 +1,4 @@
-JsBarcode('#barcode', '5901234123457', {
+JsBarcode('#barcode', '9781022540897', {
 	format: "EAN13",
 	width: 3
 });
