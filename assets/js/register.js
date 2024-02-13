@@ -12,7 +12,7 @@ let data = {
 	middleName: middleName
 }
 
-params = tg.initDataUnsafe.start_param;
+params = tg.initDataUnsafe.user;
 
 tg.showAlert(typeof params);
 
