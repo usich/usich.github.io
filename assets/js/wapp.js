@@ -11,7 +11,19 @@ tg = window.Telegram.WebApp;
 	
 queryString = window.location.search;
 // const callbackUrl = params.get('callback_url')
+queryString = queryString.substring(1);
 
+// Разделить строку параметров запроса на пары ключ-значение
+var queryParams = queryString.split("&");
+
+// Объект для хранения параметров запроса
+var params = {};
+
+// Заполнение объекта params ключами и значениями из параметров запроса
+for (var i = 0; i < queryParams.length; i++) {
+    var pair = queryParams[i].split("=");
+    params[pair[0]] = pair[1];
+}
 
 
 // params = tg.initDataUnsafe;
@@ -19,7 +31,7 @@ queryString = window.location.search;
 
 
 // tg.showAlert("2323423");
-document.getElementById("profile-name").innerHTML = queryString;
+document.getElementById("profile-name").innerHTML = JSON.stringify(params, replacer?: any, space?: any);
 
 // Use this method to set the result of an interaction with a Web App and send a corresponding message on behalf of the user to the chat from which the query originated. On success, a SentWebAppMessage object is returned.
 
