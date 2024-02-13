@@ -1,4 +1,6 @@
-JsBarcode('#barcode', '1231231231234');
-tg = window.Telegram.WebApp;
+JsBarcode('#barcode', '1231231231234', {
+	width: 3
+});
 
+tg = window.Telegram.WebApp;
 
