@@ -5,7 +5,7 @@ JsBarcode('#barcode', '9781022540897', {
 	width: 3
 });
 
-document.getElementById("test-sa").innerHTML = "2234234";
+
 
 tg = window.Telegram.WebApp;
 	
@@ -17,6 +17,7 @@ tg.showAlert("JSON.stringify(params)");
 
 
 tg.showAlert("2323423");
+document.getElementById("test-sa").innerHTML = "2234234";
 
 // Use this method to set the result of an interaction with a Web App and send a corresponding message on behalf of the user to the chat from which the query originated. On success, a SentWebAppMessage object is returned.
 
