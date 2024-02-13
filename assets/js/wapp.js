@@ -9,7 +9,7 @@ JsBarcode('#barcode', '9781022540897', {
 
 tg = window.Telegram.WebApp;
 	
-params = tg.initDataUnsafe;
+params = tg.initData;
 
 
 // params = tg.initDataUnsafe;
@@ -24,3 +24,7 @@ document.getElementById("profile-name").innerHTML = JSON.stringify(params);
 // Parameter	Type	Required	Description
 // web_app_query_id	String	Yes	Unique identifier for the query to be answered
 // result
+
+
+{"query_id":"AAFOPZgpAAAAAE49mCmt8kL3","user":{"id":697843022,"first_name":"Илья","last_name":"","username":"ilya_usichenko","language_code":"ru","allows_write_to_pm":true},"auth_date":"1707867139","hash":"13ebfd0b4b39a072f8db8f0a5823977aedbae62d69169aa4de4bd76404cf3003"}
+
