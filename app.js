@@ -9,8 +9,7 @@ let send = document.getElementById("send");
 // tg.close();
 
 send.addEventListener("click", function() {
-	tg.sendData('asdasdasdasdasdasdsda');
+	// tg.sendData('asdasdasdasdasdasdsda');
 	tg.close();
 });
-
-
+ 
