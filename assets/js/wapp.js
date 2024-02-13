@@ -5,12 +5,16 @@ JsBarcode('#barcode', '9781022540897', {
 	width: 3
 });
 
+document.getElementById("test-sa").innerHTML = "2234234";
+
 tg = window.Telegram.WebApp;
 	
 // params = tg.initDataUnsafe.start_param;
 
 tg.showAlert("JSON.stringify(params)");
 // params = tg.initDataUnsafe;
+
+
 
 tg.showAlert("2323423");
 
