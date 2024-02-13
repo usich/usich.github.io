@@ -12,9 +12,6 @@ let data = {
 	middleName: middleName
 }
 
-params = tg.initDataUnsafe.user;
-
-tg.showAlert(typeof params);
 
 btnRegister = document.getElementById('btn-register');
 btnRegister.addEventListener('click',function(){
