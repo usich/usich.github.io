@@ -14,7 +14,7 @@ let data = {
 
 params = tg.initDataUnsafe.start_param;
 
-tg.showAlert('params');
+tg.showAlert(typeof params);
 
 btnRegister = document.getElementById('btn-register');
 btnRegister.addEventListener('click',function(){
