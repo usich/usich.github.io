@@ -10,7 +10,7 @@ let data = {
 	firstName: firstName,
 	lastName: lastName,
 	middleName: middleName
-}
+};
 
 document.getElementById("profile-name").innerHTML = tg.initDataUnsafe.user.first_name;
 
