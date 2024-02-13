@@ -5,9 +5,12 @@ document.getElementById("customerName").innerHTML = tg.initDataUnsafe.user.first
 
 let send = document.getElementById("send");
 
-send.addEventListener("click", () => {
-	tg.sendData('asdasdasdasdasdasdsda');
-	tg.close();
-});
+tg.sendData('asdasdasdasdasdasdsda');
+tg.close();
+
+// send.addEventListener("click", () => {
+// 	tg.sendData('asdasdasdasdasdasdsda');
+// 	tg.close();
+// });
 
 
