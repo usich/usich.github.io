@@ -11,4 +11,12 @@ let data = {
 	lastName: lastName,
 	middleName: middleName
 }
-tg.sendData(JSON.stringify(data));
+
+btnRegister = document.getElementById('btn-register');
+btnRegister.addEventListener('click',function(){
+	tg.sendData(JSON.stringify(data));
+	tg.close();
+});
+
+
+
