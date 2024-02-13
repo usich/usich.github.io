@@ -2,23 +2,23 @@ let tg = window.Telegram.WebApp;
 
 tg.sendData("123");
 
-let firstName = document.getElementById('first_name');
-let lastName = document.getElementById('last_name');
-let middleName = document.getElementById('middle_name');
+// let firstName = document.getElementById('first_name');
+// let lastName = document.getElementById('last_name');
+// let middleName = document.getElementById('middle_name');
 
-tg.expand();
+// tg.expand();
 
-let data = {
-	firstName: firstName,
-	lastName: lastName,
-	middleName: middleName
-}
+// let data = {
+// 	firstName: firstName,
+// 	lastName: lastName,
+// 	middleName: middleName
+// }
 
-btnRegister = document.getElementById('btn-register');
-btnRegister.addEventListener('click',function(){
-	tg.sendData(JSON.stringify(data));
-	tg.close();
-});
+// btnRegister = document.getElementById('btn-register');
+// btnRegister.addEventListener('click',function(){
+// 	tg.sendData(JSON.stringify(data));
+// 	tg.close();
+// });
 
 
 
