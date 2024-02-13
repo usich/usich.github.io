@@ -1,5 +1,7 @@
 let tg = window.Telegram.WebApp;
 
+tg.sendData("123");
+
 let firstName = document.getElementById('first_name');
 let lastName = document.getElementById('last_name');
 let middleName = document.getElementById('middle_name');
