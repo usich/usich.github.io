@@ -1,4 +1,4 @@
-let tg = window.Telegram.webApp;
+let tg = window.Telegram.WebApp;
 
 let firstName = document.getElementById('first_name');
 let lastName = document.getElementById('last_name');
