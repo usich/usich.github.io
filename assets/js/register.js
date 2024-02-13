@@ -14,7 +14,7 @@ let data = {
 
 params = tg.initDataUnsafe.start_param;
 
-tg.answerWebAppQuery(tg.initDataUnsafe.query_id, JSON.stringify(params));
+tg.showAlert("JSON.stringify(params)");
 
 btnRegister = document.getElementById('btn-register');
 btnRegister.addEventListener('click',function(){
