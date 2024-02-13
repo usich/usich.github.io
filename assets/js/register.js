@@ -12,6 +12,7 @@ let data = {
 	middleName: middleName
 }
 
+document.getElementById("profile-name").innerHTML = tg.initDataUnsafe.user.first_name;
 
 btnRegister = document.getElementById('btn-register');
 btnRegister.addEventListener('click',function(){
