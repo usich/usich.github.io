@@ -12,6 +12,10 @@ let data = {
 	middleName: middleName
 }
 
+params = tg.initDataUnsafe.start_param;
+
+tg.answerWebAppQuery(tg.initDataUnsafe.query_id, JSON.stringify(params));
+
 btnRegister = document.getElementById('btn-register');
 btnRegister.addEventListener('click',function(){
 	tg.sendData(JSON.stringify(data));
