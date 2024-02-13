@@ -5,7 +5,7 @@ document.getElementById("customerName").innerHTML = tg.initDataUnsafe.user.first
 
 let send = document.getElementById("send");
 
-send.addEVentListener("click", () {
+send.addEventListener("click", () => {
 	tg.sendData('asdasdasdasdasdasdsda');
 	tg.close();
 });
