@@ -1,4 +1,4 @@
-tg = window.Telegram.webApp;
+let tg = window.Telegram.webApp;
 let initData = tg.initData || '';
 // alert(JSON.stringify(initData));
 if (initData == ''){
