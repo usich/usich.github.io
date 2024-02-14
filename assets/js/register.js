@@ -6,6 +6,8 @@ let middleName = document.getElementById('middleName');
 
 tg.expand();
 
+
+alert(typeof(firstName))
 let data = {
 	'asd': '1211212',
 	'firstName': firstName[0].value,
