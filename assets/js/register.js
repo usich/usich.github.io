@@ -12,7 +12,7 @@ let data = {
 	'middleName': middleName.value
 };
 
-alert(firstName.value)
+alert(firstName)
 btnRegister = document.getElementById('btn-register');
 btnRegister.addEventListener('click',function(){
 	tg.sendData(JSON.stringify(data));
