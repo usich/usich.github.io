@@ -17,8 +17,10 @@ if (initData != '' && initDataUnsafe != {}){
         params[pair[0]] = pair[1];
     }
     alert(JSON.stringify(initDataUnsafe));
+    alert(typeof(params['user-id']));
     if (params.hasOwnProperty('user-id')){
         userId = initDataUnsafe.user.id;
+        alert(typeof(userId));
         if (params['user-id'] != userId) {tg.close()};
     } else {
         alert("123");
