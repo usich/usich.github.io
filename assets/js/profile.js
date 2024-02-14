@@ -1,7 +1,8 @@
 let tg = window.Telegram.WebApp;
 let initData = tg.initData || '';
+let initDataUnsafe = tg.initDataUnsafe || {};
 // alert(JSON.stringify(initData));
-if (initData != ''){
+if (initData != '' && initDataUnsafe != {}){
     alert( "Правильно!" );
     JsBarcode('#barcode', '1231231231234', {
         lineColor: "#0aa",
