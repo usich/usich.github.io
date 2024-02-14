@@ -22,7 +22,8 @@ function main(){
             userId = userId.toString();
             // alert(`${userId}: ${userId.length}. #### ${params['user-id']}: ${params['user-id'].length}`);
             if (params['user_id'] != userId) {
-                tg.close()
+                alert("111");
+                tg.close();
                 return;
             }
         } else {
@@ -31,6 +32,7 @@ function main(){
         }
 
         if (!params.hasOwnProperty('barcode') || params['barcode'].length != 13){
+            alert("2222");
             tg.close();
             return;
         }
