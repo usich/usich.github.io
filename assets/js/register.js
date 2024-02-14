@@ -7,9 +7,9 @@ let middleName = document.getElementById('middleName');
 tg.expand();
 
 let data = {
-	firstName: firstName,
-	lastName: lastName,
-	middleName: middleName
+	firstName: firstName.value,
+	lastName: lastName.value,
+	middleName: middleName.value
 };
 
 
