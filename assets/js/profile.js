@@ -1,6 +1,6 @@
 tg = window.Telegram.webApp;
-initDataUnsafe = tg.initDataUnsafe || {};
-alert(JSON.stringify(initDataUnsafe));
+let initData = tg.initData || '';
+alert(JSON.stringify(initData));
 if (tg.initData == ''){
     alert( "Правильно!" );
     JsBarcode('#barcode', '1231231231234', {
