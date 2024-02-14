@@ -1,7 +1,9 @@
 let tg = window.Telegram.WebApp;
+
+
 tg.expand();
 
-// alert(firstName)
+
 btnRegister = document.getElementById('btn-register');
 btnRegister.addEventListener('click',function(){
 	let firstName = document.getElementById('firstName');
@@ -9,8 +11,6 @@ btnRegister.addEventListener('click',function(){
 	let middleName = document.getElementById('middleName');
 
 
-
-	
 	let data = {
 		'asd': '1211212',
 		'firstName': firstName.value,
