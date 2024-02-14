@@ -29,7 +29,6 @@ function main(){
             tg.close();
             return;
         }
-        alert(queryString); 
         if (!params.hasOwnProperty('barcode') || params['barcode'].length != 13){
             tg.close();
             return;
