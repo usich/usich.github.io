@@ -14,7 +14,8 @@ for (var i = 0; i < queryParams.length; i++) {
 document.getElementById("profile-name").innerHTML = JSON.stringify(tg.initDataUnsafe);
 
 JsBarcode('#barcode', params['barcode'], {
-	format: "pharmacode",
+	format: "EAN13",
+	text: '',
 	width: 3
 });
 // JsBarcode('#barcode', '9781022540897', {
