@@ -35,7 +35,7 @@ function main(){
             return;
         }
 
-        JsBarcode('#barcode', '1231231231234', {
+        JsBarcode('#barcode', paramsp['barcode'], {
             lineColor: "#0aa",
             width:4,
             height:60,
