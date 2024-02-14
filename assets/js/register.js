@@ -9,12 +9,13 @@ btnRegister.addEventListener('click',function(){
 	let firstName = document.getElementById('firstName');
 	let lastName = document.getElementById('lastName');
 	let middleName = document.getElementById('middleName');
+	let email = document.getElementById('email');
 
 	let data = {
-		'asd': '1211212',
 		'firstName': firstName.value,
 		'lastName': lastName.value,
-		'middleName': middleName.value
+		'middleName': middleName.value,
+		'email': email.value
 	};
 
 		tg.sendData(JSON.stringify(data));
