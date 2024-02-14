@@ -16,9 +16,10 @@ if (initData != '' && initDataUnsafe != {}){
         let pair = queryParams[i].split("=");
         params[pair[0]] = pair[1];
     }
-    alert(JSON.stringify(params));
+    // alert(JSON.stringify(params));
     if (params.hasOwnProperty('chat-id')){
         chatId = initDataUnsafe.chat.id.toString();
+        alert(chatId)
         if (params['chat-id'] != chatId) {tg.close()};
     } else {
         alert("123");
