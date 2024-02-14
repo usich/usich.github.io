@@ -16,7 +16,7 @@ document.getElementById("profile-name").innerHTML = JSON.stringify(tg.initDataUn
 JsBarcode('#barcode', params['barcode'], {
 	format: "EAN13",
 	text: 'CARD',
-	textAlign: "centre"
+	textAlign: "centre",
 	width: 3
 });
 // JsBarcode('#barcode', '9781022540897', {
