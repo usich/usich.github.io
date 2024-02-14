@@ -1,8 +1,8 @@
 let tg = window.Telegram.WebApp;
 
-let firstName = document.getElementById('first_name');
-let lastName = document.getElementById('last_name');
-let middleName = document.getElementById('middle_name');
+let firstName = document.getElementById('firstName');
+let lastName = document.getElementById('lastName');
+let middleName = document.getElementById('middleName');
 
 tg.expand();
 
