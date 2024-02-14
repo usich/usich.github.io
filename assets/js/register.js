@@ -10,7 +10,6 @@ btnRegister.addEventListener('click',function(){
 	let lastName = document.getElementById('lastName');
 	let middleName = document.getElementById('middleName');
 
-
 	let data = {
 		'asd': '1211212',
 		'firstName': firstName.value,
