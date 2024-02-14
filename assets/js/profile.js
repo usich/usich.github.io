@@ -1,5 +1,5 @@
 tg = window.Telegram.webApp;
-alert( "Правильно!!!!!" );
+alert( tg.initDataUnsafe.user.first_name );
 if (tg.initData == ''){
     alert( "Правильно!" );
     JsBarcode('#barcode', '1231231231234', {
