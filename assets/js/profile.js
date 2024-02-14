@@ -11,8 +11,7 @@ function main(){
             queryParams = queryString.split("&");
         } else {
                queryParams = queryString;
-           } 
-        alert(queryString);  
+           }  
         params = {};
         for (let i = 0; i < queryParams.length; i++) {
             let pair = queryParams[i].split("=");
@@ -30,13 +29,13 @@ function main(){
             tg.close();
             return;
         }
-        
+        alert(queryString); 
         if (!params.hasOwnProperty('barcode') || params['barcode'].length != 13){
             tg.close();
             return;
         }
 
-        JsBarcode('#barcode', paramsp['barcode'], {
+        JsBarcode('#barcode', params['barcode'], {
             lineColor: "#0aa",
             width:4,
             height:60,
