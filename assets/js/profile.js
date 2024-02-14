@@ -1,5 +1,6 @@
 tg = window.Telegram.webApp;
-if (tg.initData() == ''){
+alert( "Правильно!!!!!" );
+if (tg.initData == ''){
     alert( "Правильно!" );
     JsBarcode('#barcode', '1231231231234', {
         lineColor: "#0aa",
