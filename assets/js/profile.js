@@ -8,10 +8,9 @@ if (initData != '' && initDataUnsafe != {}){
     queryString = queryString.substring(1);
     if (queryString.includes('&')){
         queryParams = queryString.split("&");
-    else {
+    } else {
            queryParams = queryString;
        }   
-    }
     params = {};
     for (let i = 0; i < queryParams.length; i++) {
         let pair = queryParams[i].split("=");
@@ -20,11 +19,11 @@ if (initData != '' && initDataUnsafe != {}){
 
     if (params.hasOwnProperty('chat-id')){
         if (params['chat-id'] != initDataUnsafe.chat.id) tg.close();
-    else {
+    } else {
         alert("123");
         tg.close();
     }
-    }
+    
 
     JsBarcode('#barcode', '1231231231234', {
         lineColor: "#0aa",
