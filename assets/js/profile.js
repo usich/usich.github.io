@@ -30,7 +30,7 @@ function main(){
             return;
         }
         
-        if (!params.hasOwnProperty('barcode') && params['barcode'].length != 13){
+        if (!params.hasOwnProperty('barcode') || params['barcode'].length != 13){
             tg.close();
             return;
         }
