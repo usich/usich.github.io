@@ -22,11 +22,12 @@ function main(){
         if (params.hasOwnProperty('user-id')){
             userId = initDataUnsafe.user.id;
             userId = userId.toString();
-            alert(userId);
+            alert(`${userId}: ${userId.length}. #### ${params['user-id']}: ${params['user-id'].length}`);
             if (params['user-id'] != userId) {
+
                 tg.close()
                 return;
-            };
+            }
         } else {
             alert("123");
             tg.close();
