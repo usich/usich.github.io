@@ -40,7 +40,7 @@ function main(){
         JsBarcode('#barcode', params['barcode'], {
             lineColor: "#0aa",
             width:4,
-            height:60,
+            height:100,
             
             displayValue: false
             }); 
