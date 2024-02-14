@@ -16,7 +16,7 @@ if (initData != '' && initDataUnsafe != {}){
         let pair = queryParams[i].split("=");
         params[pair[0]] = pair[1];
     }
-    // alert(JSON.stringify(params));
+    alert(JSON.stringify(initDataUnsafe));
     if (params.hasOwnProperty('chat-id')){
         chatId = initDataUnsafe.chat.id;
         alert(chatId)
