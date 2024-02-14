@@ -20,4 +20,3 @@ btnRegister.addEventListener('click',function(){
 });
 
 
-

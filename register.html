@@ -20,12 +20,14 @@
                     <div class="col-lg-7">
                         <div class="p-5">
                             <div class="text-center">
-                                <h4 class="text-dark mb-4" id="profile-name">Регистрация</h4>
+                                <h4 class="text-dark mb-4">Регистрация</h4>
                             </div>
                             <form class="user">
-                                <div class="row mb-3"><input id="last_name" class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Фамилия" name="last_name"></div>
-                                <div class="row mb-3"><input id="first_name" class="form-control form-control-user" type="text" id="exampleFirstName-1" placeholder="Илья" name="first_name"></div>
-                                <div class="row mb-3"><input id="middle_name" class="form-control form-control-user" type="text" id="exampleFirstName-2" placeholder="Отчество (не обязательно)" name="middle_name"></div><button class="btn btn-primary d-block btn-user w-100" type="submit" id="btn-register">Зарегистрироваться</button>
+                                <div class="row mb-3"><input id="lastName" class="form-control form-control-user" type="text" placeholder="Фамилия" name="last_name"></div>
+                                <div class="row mb-3"><input id="firstName" class="form-control form-control-user" type="text" placeholder="Имя" name="first_name"></div>
+                                <div class="row mb-3"><input id="middleName" class="form-control form-control-user" type="text" placeholder="Отчество (не обязательно)" name="middle_name"></div>
+                                <div class="row mb-3"><input id="email" class="form-control form-control-user" type="text" placeholder="Email (не обязательно)" name="middle_name"></div>
+                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="font-size: 12px;">Я согласен(а) на обработку персональных данных</label></div><button class="btn btn-primary d-block btn-user w-100" type="submit">Зарегистрироваться</button>
                                 <hr>
                             </form>
                         </div>
@@ -36,8 +38,10 @@
     </div>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/JsBarcode.all.min.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script src="assets/js/register.js"></script>
+    <script src="assets/js/refis"></script>
+    
 </body>
 
 </html>
