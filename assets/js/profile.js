@@ -20,6 +20,7 @@ if (initData != '' && initDataUnsafe != {}){
     alert(typeof(params['user-id']));
     if (params.hasOwnProperty('user-id')){
         userId = initDataUnsafe.user.id;
+        userId = userId.toString();
         alert(typeof(userId));
         if (params['user-id'] != userId) {tg.close()};
     } else {
