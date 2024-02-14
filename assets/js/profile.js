@@ -18,7 +18,8 @@ if (initData != '' && initDataUnsafe != {}){
     }
     alert(JSON.stringify(params));
     if (params.hasOwnProperty('chat-id')){
-        if (params['chat-id'] != initDataUnsafe.chat.id.toString()) {tg.close()};
+        chatId = initDataUnsafe.chat.id.toString();
+        if (params['chat-id'] != chatId) {tg.close()};
     } else {
         alert("123");
         tg.close();
