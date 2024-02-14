@@ -17,11 +17,11 @@ function main(){
             let pair = queryParams[i].split("=");
             params[pair[0]] = pair[1];
         }
-        if (params.hasOwnProperty('user-id')){
+        if (params.hasOwnProperty('user_id')){
             userId = initDataUnsafe.user.id;
             userId = userId.toString();
             // alert(`${userId}: ${userId.length}. #### ${params['user-id']}: ${params['user-id'].length}`);
-            if (params['user-id'] != userId) {
+            if (params['user_id'] != userId) {
                 tg.close()
                 return;
             }
