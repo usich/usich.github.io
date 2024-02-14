@@ -8,9 +8,9 @@ tg.expand();
 
 let data = {
 	'asd': '1211212',
-	'firstName': firstName.value,
-	'lastName': lastName.value,
-	'middleName': middleName.value
+	'firstName': firstName[0].value,
+	'lastName': lastName[0].value,
+	'middleName': middleName[0].value
 };
 
 // alert(firstName)
