@@ -20,9 +20,9 @@ function main(){
         if (params.hasOwnProperty('user_id')){
             userId = initDataUnsafe.user.id;
             userId = userId.toString();
-            // alert(`${userId}: ${userId.length}. #### ${params['user-id']}: ${params['user-id'].length}`);
+            
             if (params['user_id'] != userId) {
-                alert("111");
+                
                 tg.close();
                 return;
             }
@@ -32,7 +32,7 @@ function main(){
         }
 
         if (!params.hasOwnProperty('barcode') || params['barcode'].length != 13){
-            alert("2222");
+            
             tg.close();
             return;
         }
@@ -41,7 +41,7 @@ function main(){
             lineColor: "#0aa",
             width:4,
             height:60,
-            // height: 30,
+            
             displayValue: false
             }); 
     }
