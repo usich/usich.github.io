@@ -6,14 +6,28 @@ tg.expand();
 
 function main(){
 
-	alert(JSON.stringify(initData));
-	alert(JSON.stringify(initDataUnsafe));
-	alert(JSON.stringify(tg));
-	tg.close();
-	return;
+	queryString = window.location.search;
+    queryString = queryString.substring(1);
+    if (queryString.includes('&')){
+        queryParams = queryString.split("&");
+    } else {
+           queryParams = queryString;
+       }  
+    params = {};
+    for (let i = 0; i < queryParams.length; i++) {
+        let pair = queryParams[i].split("=");
+        params[pair[0]] = pair[1];
+    }
 
 	btnRegister = document.getElementById('btn-register');
 	btnRegister.addEventListener('click',function(){
+
+		let personalData = window.getElementById('formCheck-1');
+
+		if (personalData.value == false){
+			return;
+		}
+
 		let firstName = document.getElementById('firstName');
 		let lastName = document.getElementById('lastName');
 		let middleName = document.getElementById('middleName');
@@ -23,7 +37,8 @@ function main(){
 			'firstName': firstName.value,
 			'lastName': lastName.value,
 			'middleName': middleName.value,
-			'email': email.value
+			'email': email.value,
+			'phone_number': params['phone_number']
 		};
 
 			tg.sendData(JSON.stringify(data));
