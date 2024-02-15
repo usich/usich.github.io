@@ -13,12 +13,12 @@ function main(){
     } else {
            queryParams = queryString;
        } 
-    alert(queryString);
     params = {};
     for (let i = 0; i < queryParams.length; i++) {
         let pair = queryParams[i].split("=");
         params[pair[0]] = pair[1];
     }
+    alert(params);
 	btnRegister = document.getElementById('btn-register');
 	btnRegister.addEventListener('click',function(){
 		let personalData = document.getElementById('formCheck-1');
