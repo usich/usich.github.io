@@ -18,6 +18,7 @@ function main(){
         let pair = queryParams[i].split("=");
         params[pair[0]] = pair[1];
     }
+    alert(params['phone_number']);
 	btnRegister = document.getElementById('btn-register');
 	btnRegister.addEventListener('click',function(){
 		let personalData = document.getElementById('formCheck-1');
