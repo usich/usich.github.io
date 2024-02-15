@@ -21,7 +21,7 @@ function main(){
 
 	btnRegister = document.getElementById('btn-register');
 	btnRegister.addEventListener('click',function(){
-
+		alert('asdads');
 		let personalData = window.getElementById('formCheck-1');
 
 		if (personalData.value == false){
