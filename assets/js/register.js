@@ -20,14 +20,10 @@ function main(){
     }
 	btnRegister = document.getElementById('btn-register');
 	btnRegister.addEventListener('click',function(){
-		alert("eeeeesss");
-		let personalData = false;//window.getElementById('formCheck-1');
-		alert('xxxxxx');
+		let personalData = document.getElementById('formCheck-1');
 		if (personalData.value == false){
-			alert('123');
 			return;
 		}
-		alert('zzzzz');
 		let firstName = document.getElementById('firstName');
 		let lastName = document.getElementById('lastName');
 		let middleName = document.getElementById('middleName');
