@@ -25,7 +25,7 @@ function main(){
 		let personalData = window.getElementById('formCheck-1');
 
 		if (personalData.value == false){
-
+			alert('123');
 			return;
 		}
 
