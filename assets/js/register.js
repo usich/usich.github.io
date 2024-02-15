@@ -8,6 +8,7 @@ function main(){
 
 	alert(JSON.stringify(initData));
 	alert(JSON.stringify(initDataUnsafe));
+	alert(JSON.stringify(tg));
 	tg.close();
 	return;
 
