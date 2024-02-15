@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
 </head>
+
 <body class="bg-gradient-primary">
     <div class="container">
         <div class="card shadow-lg o-hidden border-0 my-5">
@@ -22,11 +23,11 @@
                                 <h4 class="text-dark mb-4">Регистрация</h4>
                             </div>
                             <form class="user">
-                                <div class="row mb-3"><input id="lastName" class="form-control form-control-user" type="text" placeholder="Фамилия" name="last_name"></div>
-                                <div class="row mb-3"><input id="firstName" class="form-control form-control-user" type="text" placeholder="Имя" name="first_name"></div>
-                                <div class="row mb-3"><input id="middleName" class="form-control form-control-user" type="text" placeholder="Отчество (не обязательно)" name="middle_name"></div>
-                                <div class="row mb-3"><input id="email" class="form-control form-control-user" type="text" placeholder="Email (не обязательно)" name="middle_name"></div>
-                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="font-size: 12px;">Я согласен(а) на обработку персональных данных</label></div><button id="btn-register" class="btn btn-primary d-block btn-user w-100" type="submit">Зарегистрироваться</button>
+                                <div class="row mb-3"><input class="form-control form-control-user" type="text" id="lastName" placeholder="Фамилия" required=""></div>
+                                <div class="row mb-3"><input class="form-control form-control-user" type="text" id="firstName" placeholder="Имя" required=""></div>
+                                <div class="row mb-3"><input class="form-control form-control-user" type="text" id="middleName" placeholder="Отчество (необязательно)"></div>
+                                <div class="row mb-3"><input class="form-control form-control-user" type="email" id="email" placeholder="Email (не обязательно)"><input class="form-control" type="hidden"></div>
+                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" required=""><label class="form-check-label" for="formCheck-1" style="font-size: 12px;">Я согласен(а) на обработку персональных данных</label></div><button class="btn btn-primary d-block btn-user w-100" type="submit">Зарегистрироваться</button>
                                 <hr>
                             </form>
                         </div>
@@ -35,11 +36,12 @@
             </div>
         </div>
     </div>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/JsBarcode.all.min.js"></script>
+    <script src="assets/js/profile.js"></script>
     <script src="assets/js/register.js"></script>
-    
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/wapp.js"></script>
 </body>
 
 </html>
