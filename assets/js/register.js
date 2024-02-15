@@ -16,9 +16,9 @@ function main(){
         	params[pair[0]] = pair[1];
     	}
     } else {
-    		let pair = queryParams[i].split("=");
-        	params[pair[0]] = pair[1];
-       		queryParams = queryString;
+    	let pair = queryParams[i].split("=");
+        params[pair[0]] = pair[1];
+       	queryParams = queryString;
        } 
     alert(JSON.stringify(params));
 	btnRegister = document.getElementById('btn-register');
