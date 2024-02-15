@@ -21,14 +21,14 @@ function main(){
 
 	btnRegister = document.getElementById('btn-register');
 	btnRegister.addEventListener('click',function(){
-		
+		alert("eeeee");
 		let personalData = window.getElementById('formCheck-1');
-
+		alert('xxxxxx');
 		if (personalData.value == false){
 			alert('123');
 			return;
 		}
-
+		alert('zzzzz');
 		let firstName = document.getElementById('firstName');
 		let lastName = document.getElementById('lastName');
 		let middleName = document.getElementById('middleName');
