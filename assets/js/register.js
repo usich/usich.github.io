@@ -7,13 +7,13 @@ tg.expand();
 function main(){
 
 	queryString = window.location.search;
-	alert(queryString);
     queryString = queryString.substring(1);
     if (queryString.includes('&')){
         queryParams = queryString.split("&");
     } else {
            queryParams = queryString;
-       }  
+       } 
+    alert(queryString);
     params = {};
     for (let i = 0; i < queryParams.length; i++) {
         let pair = queryParams[i].split("=");
