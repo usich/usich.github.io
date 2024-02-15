@@ -9,6 +9,7 @@ function main(){
 	queryString = window.location.search;
     queryString = queryString.substring(1);
     params = {};
+
     if (queryString.includes('&')){
         queryParams = queryString.split("&");
         for (let i = 0; i < queryParams.length; i++) {
@@ -16,7 +17,7 @@ function main(){
         	params[pair[0]] = pair[1];
     	}
     } else {
-    	let pair = queryParams[i].split("=");
+    	let pair = queryParams.split("=");
         params[pair[0]] = pair[1];
        	queryParams = queryString;
        } 
