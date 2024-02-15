@@ -18,11 +18,10 @@ function main(){
         let pair = queryParams[i].split("=");
         params[pair[0]] = pair[1];
     }
-
 	btnRegister = document.getElementById('btn-register');
 	btnRegister.addEventListener('click',function(){
 		alert("eeeeesss");
-		let personalData = window.getElementById('formCheck-1');
+		let personalData = false;//window.getElementById('formCheck-1');
 		alert('xxxxxx');
 		if (personalData.value == false){
 			alert('123');
