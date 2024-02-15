@@ -21,7 +21,7 @@ function main(){
         params[pair[0]] = pair[1];
        	queryParams = queryString;
        } 
-    // alert(JSON.stringify(params));
+    alert(JSON.stringify(params));
 	btnRegister = document.getElementById('btn-register');
 	btnRegister.addEventListener('click',function(){
 		let personalData = document.getElementById('formCheck-1');
