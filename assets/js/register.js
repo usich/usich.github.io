@@ -8,16 +8,18 @@ function main(){
 
 	queryString = window.location.search;
     queryString = queryString.substring(1);
+    params = {};
     if (queryString.includes('&')){
         queryParams = queryString.split("&");
+        for (let i = 0; i < queryParams.length; i++) {
+        	let pair = queryParams[i].split("=");
+        	params[pair[0]] = pair[1];
+    	}
     } else {
-           queryParams = queryString;
+    		let pair = queryParams[i].split("=");
+        	params[pair[0]] = pair[1];
+       		queryParams = queryString;
        } 
-    params = {};
-    for (let i = 0; i < queryParams.length; i++) {
-        let pair = queryParams[i].split("=");
-        params[pair[0]] = pair[1];
-    }
     alert(JSON.stringify(params));
 	btnRegister = document.getElementById('btn-register');
 	btnRegister.addEventListener('click',function(){
