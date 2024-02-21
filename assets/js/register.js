@@ -1,4 +1,3 @@
-alert("3f4f4f");
 let tg = window.Telegram.WebApp;
 let initData = tg.initData || '';
 let initDataUnsafe = tg.initDataUnsafe || {};
