@@ -1,5 +1,5 @@
 let tg = window.Telegram.WebApp;
-alert('123123');
+alert('123123'); 
 let initData = tg.initData || '';
 let initDataUnsafe = tg.initDataUnsafe || {};
 
