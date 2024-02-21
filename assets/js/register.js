@@ -1,8 +1,8 @@
-let tg = window.Telegram.WebApp;
-let initData = tg.initData || '';
-let initDataUnsafe = tg.initDataUnsafe || {};
+let tgbot = window.Telegram.WebApp;
+let initData = tgbot.initData || '';
+let initDataUnsafe = tgbot.initDataUnsafe || {};
 
-tg.expand();
+tgbot.expand();
 
 function main(){
 
@@ -40,8 +40,8 @@ function main(){
 			'phone_number': params['phone_number']
 		};
 
-			tg.sendData(JSON.stringify(data));
-			tg.close();
+			tgbot.sendData(JSON.stringify(data));
+			tgbot.close();
 		});
 }
 
