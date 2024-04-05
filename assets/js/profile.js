@@ -3,11 +3,12 @@ let initData = tg.initData || '';
 let initDataUnsafe = tg.initDataUnsafe || {};
 
 fetch('https://eb53-91-149-240-106.ngrok-free.app/auth/login', {
-  method: 'POST',
+  method: 'POST', // Здесь так же могут быть GET, PUT, DELETE
+  body: JSON.stringify(initData), // Тело запроса в JSON-формате
   headers: {
-    'Content-Type': 'application/json',
+    // Добавляем необходимые заголовки
+    'Content-type': 'application/json; charset=UTF-8',
   },
-  body: JSON.stringify(initData),
 })
   .then(response => {
     if (response.ok) {
