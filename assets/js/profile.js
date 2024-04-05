@@ -18,6 +18,9 @@ fetch('https://eb53-91-149-240-106.ngrok-free.app/auth/login', {
       // Ошибка авторизации
       throw new Error('Authorization failed');
     }
+  })
+  .catch((err)=>{
+    console.log(err);
   });
 
 
