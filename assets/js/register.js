@@ -18,7 +18,7 @@ function main(){
     	}
     } else {
     	let pair = queryString.split("=");
-        params[pair[0]] = pair[1];
+        params[pair[0]] = pair[1];	
        	
        } 
 	btnRegister = document.getElementById('btn-register');

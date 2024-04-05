@@ -2,7 +2,7 @@ let tg = window.Telegram.WebApp;
 let initData = tg.initData || '';
 let initDataUnsafe = tg.initDataUnsafe || {};
 
-fetch('https://eb53-91-149-240-106.ngrok-free.app/auth', {
+fetch('https://eb53-91-149-240-106.ngrok-free.app/auth/login', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
