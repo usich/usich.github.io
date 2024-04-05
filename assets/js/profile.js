@@ -3,7 +3,7 @@ let initData = tg.initData || '';
 let initDataUnsafe = tg.initDataUnsafe || {};
 
 fetch('https://eb53-91-149-240-106.ngrok-free.app/auth/login', {
-  method: 'POST',
+  method: 'POST'
   headers: {
     'Content-Type': 'application/json',
   },
