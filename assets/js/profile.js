@@ -2,6 +2,24 @@ let tg = window.Telegram.WebApp;
 let initData = tg.initData || '';
 let initDataUnsafe = tg.initDataUnsafe || {};
 
+fetch('https://eb53-91-149-240-106.ngrok-free.app/auth', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(initData),
+})
+  .then(response => {
+    if (response.ok) {
+      // Успешная авторизация
+      return response.json();
+    } else {
+      // Ошибка авторизации
+      throw new Error('Authorization failed');
+    }
+  });
+
+
 function main(){
     if (initData != '' && initDataUnsafe != {}){
 
@@ -47,5 +65,5 @@ function main(){
     }
 }
 
-main();
+// main();
 
