@@ -2,7 +2,7 @@ let tg = window.Telegram.WebApp;
 let initData = tg.initData || '';
 let initDataUnsafe = tg.initDataUnsafe || {};
 
-fetch('https://eb53-91-149-240-106.ngrok-free.app/auth/login', {
+fetch('https://d0e8-91-149-240-106.ngrok-free.app/auth/login', {
   method: 'POST', // Здесь так же могут быть GET, PUT, DELETE
   body: JSON.stringify(initDataUnsafe), // Тело запроса в JSON-формате
   headers: {
