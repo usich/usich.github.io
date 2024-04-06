@@ -9,7 +9,7 @@ let data  = {
 
 fetch('https://d0e8-91-149-240-106.ngrok-free.app/auth/login', {
   method: 'POST', // Здесь так же могут быть GET, PUT, DELETE
-  body: JSON.stringify(data), // Тело запроса в JSON-формате
+  body: JSON.stringify(initDataUnsafe), // Тело запроса в JSON-формате
   headers: {
     // Добавляем необходимые заголовки
     'Content-type': 'application/json; charset=UTF-8',
