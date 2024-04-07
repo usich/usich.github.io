@@ -7,7 +7,7 @@ let data  = {
     'initDataUnsafe': initDataUnsafe
 };
 
-fetch('https://d0e8-91-149-240-106.ngrok-free.app/auth/login', {
+fetch('https://11e6-5-228-34-19.ngrok-free.app/auth/login', {
   method: 'POST', // Здесь так же могут быть GET, PUT, DELETE
   body: JSON.stringify(initData), // Тело запроса в JSON-формате
   headers: {
