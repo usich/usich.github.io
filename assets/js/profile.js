@@ -3,8 +3,7 @@ let initData = tg.initData || '';
 let initDataUnsafe = tg.initDataUnsafe || {};
 
 let data  = {
-    'initData': initData,
-    'initDataUnsafe': initDataUnsafe
+    'init_data': initData
 };
 
 fetch('https://11e6-5-228-34-19.ngrok-free.app/auth/login', {
