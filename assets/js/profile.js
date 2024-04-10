@@ -6,7 +6,7 @@ let data  = {
     'init_data': initData
 };
 
-fetch('https://d6b1-91-149-240-106.ngrok-free.app/api/v1/auth/login', {
+fetch('https://6d1f-5-228-34-19.ngrok-free.app/api/v1/auth/login', {
   method: 'POST', // Здесь так же могут быть GET, PUT, DELETE
   body: JSON.stringify(data), // Тело запроса в JSON-формате
   headers: {
