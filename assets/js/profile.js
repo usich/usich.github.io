@@ -31,6 +31,7 @@ fetch('https://7a83-109-173-72-27.ngrok-free.app/api/v1/auth/login', {
   btnRegister = document.getElementById('btn');
     btnRegister.addEventListener('click',function(){
         s = tg.showScanQrPopup('sasasasasas');
+        alert(s);
         });
 
 
