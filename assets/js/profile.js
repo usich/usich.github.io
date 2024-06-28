@@ -6,26 +6,26 @@ let data  = {
     'init_data': initData
 };
 
-fetch('https://bagira-bot.ru/api/v1/auth/login', {
-  method: 'POST', // Здесь так же могут быть GET, PUT, DELETE
-  body: JSON.stringify(data), // Тело запроса в JSON-формате
-  headers: {
-    // Добавляем необходимые заголовки
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then(response => {
-    if (response.ok) {
-      // Успешная авторизация
-      return response.json();
-    } else {
-      // Ошибка авторизации
-      throw new Error('Authorization failed');
-    }
-  })
-  .catch((err)=>{
-    console.log(err);
-  });
+// fetch('https://bagira-bot.ru/api/v1/auth/login', {
+//   method: 'POST', // Здесь так же могут быть GET, PUT, DELETE
+//   body: JSON.stringify(data), // Тело запроса в JSON-формате
+//   headers: {
+//     // Добавляем необходимые заголовки
+//     'Content-type': 'application/json; charset=UTF-8',
+//   },
+// })
+//   .then(response => {
+//     if (response.ok) {
+//       // Успешная авторизация
+//       return response.json();
+//     } else {
+//       // Ошибка авторизации
+//       throw new Error('Authorization failed');
+//     }
+//   })
+//   .catch((err)=>{
+//     console.log(err);
+//   });
 
 
   // btnRegister = document.getElementById('btn');
